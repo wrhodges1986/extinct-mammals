@@ -40,4 +40,4 @@ You'll build a public API of extinct mammals
   * include an `order_by` query param that instructs the API to order the results by the given field
 
 ###Step 5 (Black Diamond): Query by id
-* Use regex to determine whether someone is asking for `/mammals/:id` or `/mammals
+* Use regex to determine whether someone is asking for `/mammals/:id` or `/mammals/:type` and return the appropriate response
