@@ -25,8 +25,11 @@ You'll build a public API of extinct mammals
 #### `POST /`
   * saves a new Mammal model based on the fields given in the JSON request
 
+###Step 3: Insert some data
+* Using your new API and the wikipedia article, add some extinct mammals: http://en.wikipedia.org/wiki/List_of_extinct_mammals
+
 ##Day Two
-###Step 3: Break up your project into multiple modules
+###Step 4: Break up your project into multiple modules
 * (You can use https://gist.github.com/fwielstra/1025038 as a good example)
 * Create an api.js to hold your `get` and `post` calls
 * Create a mammal.js that contains the schema and model creation for `Mammal`
@@ -36,11 +39,11 @@ You'll build a public API of extinct mammals
   * it should require the api module and connect the endoints to their appropriate functions in api.js
   * it should start the server listening on a desired port
 
-###Step 4: Routing and fetching
+###Step 5: Routing and fetching
 * Use a more complicated routing structure for your `GET /` call:
   * change the route to point to `/mammals` rather than just `/`
   * make it so that if someone requests `/mammals/marsupials` or `mammals/rodents` the call will return only mammals of that type
   * include an `order_by` query param that instructs the API to order the results by the given field
 
-###Step 5 (Black Diamond): Query by id
+###Step  (Black Diamond): Query by id
 * Use regex to determine whether someone is asking for `/mammals/:id` or `/mammals/:type` and return the appropriate response
