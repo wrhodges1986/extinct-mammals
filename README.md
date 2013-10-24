@@ -45,5 +45,5 @@ You'll build a public API of extinct mammals
   * make it so that if someone requests `/mammals/marsupials` or `mammals/rodents` the call will return only mammals of that type
   * include an `order_by` query param that instructs the API to order the results by the given field
 
-###Step  (Black Diamond): Query by id
+###Step 6 (Black Diamond): Query by id
 * Use regex to determine whether someone is asking for `/mammals/:id` or `/mammals/:type` and return the appropriate response
