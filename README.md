@@ -18,6 +18,7 @@ You'll build a public API of extinct mammals
 * In your server.js require the mongoose library and create a connection to your database server
 * Create your mammalSchema with three fields: `name`, `type`, and `year_extinct`
 * Use express to create two endpoints on `/`, one a GET and one a POST
+
 #### `GET /`
   * returns a JSON array of all extinct mammals, ordered by name
 #### `POST /`
