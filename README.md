@@ -5,7 +5,7 @@ Simple NodeJS/mongoDB API
 
 ##Objective
 This will help solidify your understanding of mongoDB alongside of NodeJS using a popular ORM for mongo called mongoose
-You'll build a public API of extinct mammals
+You'll build a public API of extinct mammals retrieved from Wikipedia: http://en.wikipedia.org/wiki/List_of_extinct_mammals
 
 ##Day One
 ###Step 1: Build your project
