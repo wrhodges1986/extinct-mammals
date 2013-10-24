@@ -24,7 +24,8 @@ You'll build a public API of extinct mammals
   * saves a new Mammal model based on the fields given in the JSON request
 
 ##Day Two
-###Step 3: Break up your project into multiple modules (you can use https://gist.github.com/fwielstra/1025038 as a good example)
+###Step 3: Break up your project into multiple modules
+* (You can use https://gist.github.com/fwielstra/1025038 as a good example)
 * Create an api.js to hold your `get` and `post` calls
 * Create a mammal.js that contains the schema and model creation for `Mammal`
 * Create an app.js file that brings everything together:
