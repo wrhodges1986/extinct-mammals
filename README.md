@@ -21,6 +21,7 @@ You'll build a public API of extinct mammals
 
 #### `GET /`
   * returns a JSON array of all extinct mammals, ordered by name
+  
 #### `POST /`
   * saves a new Mammal model based on the fields given in the JSON request
 
