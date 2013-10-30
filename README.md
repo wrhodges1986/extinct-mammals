@@ -47,3 +47,45 @@ You'll build a public API of extinct mammals retrieved from Wikipedia: http://en
 
 ###Step 6 (Black Diamond): Query by id
 * Use regex to determine whether someone is asking for `/mammals/:id` or `/mammals/:type` and return the appropriate response
+
+##Integration Tests with Jasmine
+###Step 1: Create your spec file
+You can name it whatever you'd like, but since we're testing the API, let's call it test/spec/apispec.js
+###Step 2: Make sure you have the correct setup
+* Make sure mongodb is running (either in another tab or via `mongod &`)
+* Make sure `node app.js` is running and has no problems
+* Make sure you're required the `request` lib in your spec
+* "Describe" your test case, maybe something like "tests the api"
+###Step 3: Create a spec to make sure GET `/mammals` returns data
+* NOTE: make sure you have some data in your collection
+* Hint: Use the "toThrow" matcher in Jasmine to make sure try to parse JSON from the response body doesn't throw an error:
+
+```javascript
+request("http://localhost:8888/mammals", function(err, response, body) {
+ var checkJSON = function() {
+  //if body isn't valid JSON, this will throw an error and break stuff
+  JSON.parse(body);
+ }
+ expect(checkJSON).not.toThrow();
+ done();
+});
+```
+
+###Step 4: Create specs to make sure GET `/mammals` works as well as `/mammals/marsupial` (or however you input the type)
+###Step 5: Create a spec to ensure that POST `/mammals` works
+You're going to need to utilize the post method of the request library, like so:
+
+```javascript
+request({
+ uri: url+"/mammals",
+ method: 'POST',
+ json: {
+  "name": "TEST MAMMAL", 
+  "type": "test", 
+  "year_extinct": 2013
+ } 
+}, function(err, response, body) {
+ expect(body).toContain('success');
+ done();
+});
+```
