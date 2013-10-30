@@ -87,7 +87,6 @@ request({
   "year_extinct": 2013
  } 
 }, function(err, response, body) {
- expect(body).toContain('success');
- done();
+ //code for assertion and done() here
 });
 ```
