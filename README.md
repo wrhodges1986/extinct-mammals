@@ -56,6 +56,7 @@ You can name it whatever you'd like, but since we're testing the API, let's call
 * Make sure `node app.js` is running and has no problems
 * Make sure you're required the `request` lib in your spec
 * "Describe" your test case, maybe something like "tests the api"
+
 ###Step 3: Create a spec to make sure GET `/mammals` returns data
 * NOTE: make sure you have some data in your collection
 * Hint: Use the "toThrow" matcher in Jasmine to make sure try to parse JSON from the response body doesn't throw an error:
