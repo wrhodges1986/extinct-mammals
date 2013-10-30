@@ -71,7 +71,9 @@ request("http://localhost:8888/mammals", function(err, response, body) {
 });
 ```
 
-###Step 4: Create specs to make sure GET `/mammals` works as well as `/mammals/marsupial` (or however you input the type)
+###Step 4: Create specs to make sure both variations of `/mammals` work
+GET `/mammals` should work as well as `/mammals/marsupial` (or however you input the type)
+
 ###Step 5: Create a spec to ensure that POST `/mammals` works
 You're going to need to utilize the post method of the request library, like so:
 
