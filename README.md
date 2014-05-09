@@ -12,7 +12,7 @@ You'll build a public API of extinct mammals retrieved from Wikipedia: http://en
 * Create your package.json file with mongoose and express as dependencies
 * Make sure mongod is running in your terminal
 * Create a server.js file that will hold all of your API's logic
-* Be sure to require and initialize express (including the bodyParser)
+* Be sure to require and initialize express
 
 ###Step 2: Setup the mongoDB connection (reference: http://mongoosejs.com/docs/)
 * In your server.js require the mongoose library and create a connection to your database server
